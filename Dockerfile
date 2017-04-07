@@ -5,4 +5,6 @@ FROM logstash:5.3.0-alpine
 ENV TZ UTC
 ADD logstash.conf /conf/logstash.conf
 
+USER logstash
+EXPOSE 12201/udp
 CMD logstash -f /conf/logstash.conf
