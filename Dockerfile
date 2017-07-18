@@ -1,6 +1,6 @@
 # See https://hub.docker.com/r/_/logstash/
 # deprecated on 2017-06-20
-FROM logstash:5.4.0-alpine
+FROM logstash:5.4.2-alpine
 
 ENV TZ UTC
 ADD logstash.conf /conf/logstash.conf
