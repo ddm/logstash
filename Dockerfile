@@ -25,4 +25,7 @@ RUN apk add --no-cache --virtual build-dependencies \
 
 USER logstash
 
+EXPOSE 12201
+EXPOSE 9600
+
 CMD /usr/share/logstash/bin/logstash -f /usr/share/logstash/config/logstash.conf
