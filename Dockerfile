@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM arm32v6/openjdk:8-jre-alpine
 
 # https://artifacts.elastic.co/GPG-KEY-logstash
 ARG LOGSTASH_VERSION="5.6.3"
